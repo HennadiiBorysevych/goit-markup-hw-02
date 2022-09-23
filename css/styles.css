@@ -1,4 +1,72 @@
+body{
+    color:#757575 ;
+    background-color:#FFFFFF;
+}
+
+.list{
+    list-style: none;
+}
+/* header */
+.logo{
+    color:#000000 ;
+
+}
+.first-logo{
+    color:#2196F3 ;
+}
+.nav-link {
+    color:#212121 ;
+}
+.contact-link{
+    color: #757575;
+}
+.link:hover, .link:focus{
+    color: #2196F3;
+}
+/* Main content */
+.hero-title{
+color: #FFFFFF;
+background-color:#2F303A ;
+}
+.order-btn{
+    color: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+.advantages, 
+.advantages-title, 
+.company-profile, 
+.team,
+.member-name{
+    color: #212121;
+}
+.team-list{
+    background-color: #F5F4FA;
+}
+/* footer */
+.footer{
+    background-color: #2F303A;
+}
+.location{
+    color: #FFFFFF;
+}
+.footer-contact{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
 /* font-family: 'Raleway',
-sans-serif;
+ sans-serif;
 font-family: 'Roboto',
-sans-serif; */
+sans-serif;
+
+#757575  main text color
+#212121 2 text color
+#2196F3 text color accent */
+
+/*back groundcolor #FFFFFF
+second background color #F5F4FA  
+3 back color  #2F303A (footer*/
