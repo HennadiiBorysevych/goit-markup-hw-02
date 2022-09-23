@@ -1,5 +1,11 @@
+:root{
+    --primary-text-color:#757575 ;
+    --secondary-text-color:#212121;
+    --accent-text-color:#2196F3;
+    --btn-text-color:#FFFFFF;
+}
 body{
-    color:#757575 ;
+    color:var(--primary-text-color) ;
     background-color:#FFFFFF;
 }
 
@@ -11,33 +17,45 @@ body{
     color:#000000 ;
 
 }
-.first-logo{
-    color:#2196F3 ;
+.first-logo, 
+.logo:hover, 
+.logo:focus, 
+.link:hover, 
+.link:focus {
+    color: var(--accent-text-color) ;
+}
+.site-nav .link-current{
+    color: var(--accent-text-color);
 }
 .nav-link {
-    color:#212121 ;
+    color:var(--secondary-text-color) ;
 }
 .contact-link{
-    color: #757575;
-}
-.link:hover, .link:focus{
-    color: #2196F3;
+    color: var(--primary-text-color);
 }
 /* Main content */
 .hero-title{
-color: #FFFFFF;
+color: var(--btn-text-color);
 background-color:#2F303A ;
 }
 .order-btn{
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--btn-text-color);
+    background-color: var(--accent-text-color);
     cursor: pointer;
 }
-.advantages, 
-.advantages-title, 
-.company-profile, 
-.team,
-.member-name{
+.filter-btn{
+    color:#212121 ;
+    background-color:var(--btn-text-color) ;
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--btn-text-color);
+    background-color: var(--accent-text-color);
+}
+.section-title, 
+.paragraph-title,
+.works{
     color: #212121;
 }
 .team-list{
@@ -48,7 +66,7 @@ background-color:#2F303A ;
     background-color: #2F303A;
 }
 .location{
-    color: #FFFFFF;
+    color: var(--btn-text-color);
 }
 .footer-contact{
     color: rgba(255, 255, 255, 0.6);
@@ -60,13 +78,4 @@ background-color:#2F303A ;
 
 /* font-family: 'Raleway',
  sans-serif;
-font-family: 'Roboto',
-sans-serif;
-
-#757575  main text color
-#212121 2 text color
-#2196F3 text color accent */
-
-/*back groundcolor #FFFFFF
-second background color #F5F4FA  
-3 back color  #2F303A (footer*/
+font-family: 'Roboto'sans-serif; */
