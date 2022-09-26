@@ -3,6 +3,7 @@
     --secondary-text-color:#212121;
     --accent-text-color:#2196F3;
     --btn-text-color:#FFFFFF;
+    --order-btn-active:#188CE8;
 }
 body{
     color:var(--primary-text-color) ;
@@ -16,10 +17,12 @@ body{
 }
 .logo{
     color:#000000 ;
+
     font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 
 }
 .first-logo, 
@@ -31,6 +34,11 @@ body{
 }
 .site-nav .link-current{
     color: var(--accent-text-color);
+
+}
+.site-nav .nav-link,
+.contacts .contact-link{
+    text-decoration: none;
 }
 .site-nav,
 .contacts{
@@ -46,7 +54,6 @@ body{
 }
 .hero-title{
 color: var(--btn-text-color);
-    background-color:#2F303A ;
 
     font-weight: 900;
     font-size: 44px;
@@ -54,8 +61,9 @@ color: var(--btn-text-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    
-
+}
+.main-section{
+    background-color: #2F303A;
 }
 .order-btn{
     color: var(--btn-text-color);
@@ -67,8 +75,12 @@ color: var(--btn-text-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    
-  
+    border: none;
+    outline: none;
+}
+.order-btn:hover, 
+.order-btn:focus{
+    background-color: var(--order-btn-active);
 }
 .filter-btn{
     color:#212121 ;
@@ -79,6 +91,8 @@ color: var(--btn-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    border: none;
+    outline: none;
     
 }
 .filter-btn:hover,
@@ -91,6 +105,19 @@ color: var(--btn-text-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+     padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
 }
 .section-title, 
 .paragraph-title,
@@ -122,6 +149,9 @@ font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
 }
+.back-color{
+    background-color: var(--btn-text-color);
+}
 .team-list{
     background-color: #F5F4FA;
 }
@@ -132,15 +162,22 @@ font-weight: 500;
 .footer{
     background-color: #2F303A;
 }
+.logo.accent{
+    color: #FFFFFF;
+}
 .location{
     color: var(--btn-text-color);
 
     font-size: 14px;
     line-height: 2;
+    text-decoration: none;
+    font-style: normal;
 }
 .footer-contact{
     color: rgba(255, 255, 255, 0.6);
     
     font-size: 14px;
     line-height: 2;
+    text-decoration: none;
+    font-style: normal;
 }
